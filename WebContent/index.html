@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+        <title>ZoomLine Chart </title>
+        <script language="JavaScript" src="Charts/FusionCharts.js"></script>
+ </head>   
+<body>
+<div id="chartdiv" align="center">Chart will load herefff</div>
+<div id="chartdiv2" align="center">Chart will load herefff</div>
+<div id="chartdiv3" align="center">Chart will load herefff</div>
+<script type="text/javascript">
+      var chart = new FusionCharts("Charts/ZoomLine.swf", "ChartId", "1200", "700", "0", "0");
+	  chart.setDataURL( "Data/test.xml" );		   
+	  chart.render("chartdiv");
+	  var chart2 = new FusionCharts("Charts/ZoomLine.swf", "ChartId", "1200", "700", "0", "0");
+	  chart2.setDataURL( "Data/test2.xml" );		   
+	  chart2.render("chartdiv2");
+	  var chart3 = new FusionCharts("Charts/ZoomLine.swf", "ChartId", "1200", "700", "0", "0");
+	  chart3.setDataURL( "Data/test3.xml" );		   
+	  chart3.render("chartdiv3");
+</script>
+</body>
+</html>
